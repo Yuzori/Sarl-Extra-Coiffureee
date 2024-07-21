@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration des Réservations</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <div class="logo-container">
+            <img src="sarlextracoiffure.png" alt="Logo" id="logo">
+        </div>
+        <h1>Réservations en temps réel</h1>
+        <ul id="reservationList"></ul>
+    </div>
+    <div id="confirmationModal" class="modal hidden">
+        <div class="modal-content">
+            <p>Êtes-vous sûr de vouloir supprimer cette réservation ?</p>
+            <button id="confirmDelete">Oui</button>
+            <button id="cancelDelete">Non</button>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
